@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Student Data Form</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <button type="submit">SUBMMIT</button>
+    </form>
+
+    <h2>{{ student_name }}</h2>
+    <h2>{{ student_roll_no }}</h2>
+    <h2>{{ study_field }}</h2>
+
+</div>
